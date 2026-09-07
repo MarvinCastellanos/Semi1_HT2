@@ -14,6 +14,14 @@ app.get('/info', (req, res) => {
     });
 });
 
+app.get('/', (req, res) => {
+    res.json({
+        "Instancia": "Maquina 2 - Api Node",
+        "Curso": "Seminario de Sistemas 1 A",
+        "Grupo": "Grupo 1"
+    });
+});
+
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`API corriendo en el puerto ${PORT}`);
 });

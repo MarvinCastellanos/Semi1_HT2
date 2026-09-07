@@ -13,6 +13,14 @@ def info():
         "Curso": "Seminario de Sistemas 1 A",
         "Grupo": "Grupo 1"
     })
+    
+@app.route('/', methods=['GET'])
+def info():
+    return jsonify({
+        "Instancia": "Maquina 1 - Api Python",
+        "Curso": "Seminario de Sistemas 1 A",
+        "Grupo": "Grupo 1"
+    })
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
