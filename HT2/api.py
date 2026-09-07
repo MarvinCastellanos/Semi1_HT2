@@ -15,7 +15,7 @@ def info():
     })
     
 @app.route('/', methods=['GET'])
-def info():
+def home():
     return jsonify({
         "Instancia": "Maquina 1 - Api Python",
         "Curso": "Seminario de Sistemas 1 A",
